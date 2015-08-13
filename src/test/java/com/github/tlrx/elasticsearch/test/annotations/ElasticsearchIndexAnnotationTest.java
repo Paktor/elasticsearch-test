@@ -11,6 +11,7 @@ import org.elasticsearch.common.xcontent.json.JsonXContent;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.node.Node;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
@@ -26,6 +27,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(ElasticsearchRunner.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@Ignore
 public class ElasticsearchIndexAnnotationTest {
 
     @ElasticsearchNode(local = false)
